@@ -116,7 +116,7 @@ BOARD_CUSTOM_BT_CONFIG := device/lge/g4-common/bluetooth/libbt_vndcfg.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/g4-common/bluetooth
 
 # RIL
-TARGET_RIL_VARIANT := caf
+#TARGET_RIL_VARIANT := caf
 
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
@@ -177,12 +177,6 @@ BOARD_NFC_DEVICE := "/dev/pn547"
 # HAL static libs
 BOARD_HAL_STATIC_LIBRARIES := \
     libhealthd.msm8992
-
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS := \
-    $(COMMON_PATH)/cmhw \
-    hardware/cyanogen/cmhw
 
 # inherit from the proprietary version
 -include vendor/lge/g4-common/BoardConfigVendor.mk
